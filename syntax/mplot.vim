@@ -4,7 +4,7 @@ elseif exists("b:current_syntax")
   finish
 endif
 
-syntax keyword MplotKeyword s sep skip t xl yl
+syntax keyword MplotKeyword s sep skip t xl yl y w h
 " syntax region AxonComment start="\/\/" end="$"
 " syntax region AxonComment start=/\/\*/ end=/\*\//
 syntax region MplotString start=/"/ end=/"/ skip=/\\"/
