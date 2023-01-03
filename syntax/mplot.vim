@@ -4,7 +4,7 @@ elseif exists("b:current_syntax")
   finish
 endif
 
-syntax keyword MplotKeyword s sep skip t xl yl y w h f font fo dpi ct t xl x xf xr l lw tf g time
+syntax keyword MplotKeyword s sep skip t xl yl y w h f font fo dpi ct t xl x xf xr yr l lw tf g time comma csv out output line lines
 syntax keyword MplotConstant tab o + - ,
 syntax region MplotComment start="{-" end="-}"
 syntax region MplotString start=/"/ end=/"/ skip=/\\"/
