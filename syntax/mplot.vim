@@ -4,8 +4,8 @@ elseif exists("b:current_syntax")
   finish
 endif
 
-syntax keyword MplotKeyword s sep skip t xl yl y w h f font fo dpi ct t xl x xf xr yr l lw tf g time comma csv out output line lines grid g
-syntax keyword MplotConstant tab o + - ,
+syntax keyword MplotKeyword s sep skip t xl yl y w h f font fo dpi ct t xl x xf xr yr l lw tf g time comma csv out output line lines
+syntax keyword MplotConstant tab o + - , isodate grid g
 syntax keyword MplotColors red blue green ccblue ccgray ccmaroon ccgreen ccyellow
 
 syntax region MplotComment start="{-" end="-}"
