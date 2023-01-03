@@ -5,7 +5,9 @@ elseif exists("b:current_syntax")
 endif
 
 syntax keyword MplotKeyword s sep skip t xl yl y w h f font fo dpi ct t xl x xf xr yr l lw tf g time comma csv out output line lines grid g
-syntax keyword MplotConstant tab o + - , red blue green
+syntax keyword MplotConstant tab o + - ,
+syntax keyword MplotColors red blue green ccblue ccgray ccmaroon ccgreen ccyellow
+
 syntax region MplotComment start="{-" end="-}"
 syntax region MplotString start=/"/ end=/"/ skip=/\\"/
 
@@ -18,6 +20,7 @@ syntax region MplotString start=/"/ end=/"/ skip=/\\"/
 highlight link MplotKeyword Keyword
 highlight link MplotComment Comment
 highlight link MplotConstant Constant
+highlight link MplotColors Constant
 highlight link MplotString String
 
 let b:current_syntax="mplot"
