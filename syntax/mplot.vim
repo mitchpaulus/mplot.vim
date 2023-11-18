@@ -8,6 +8,8 @@ syntax keyword MplotKeyword s sep skip t xl yl y w h f font fo dpi ct t xl x xf 
 syntax keyword MplotConstant tab o + - , isodate grid g
 syntax keyword MplotColors red blue green ccblue ccgray ccmaroon ccgreen ccyellow
 
+syntax match MplotColSpec /\$[0-9]\+/
+
 syntax region MplotComment start="{-" end="-}"
 syntax region MplotString start=/"/ end=/"/ skip=/\\"/
 
@@ -22,5 +24,6 @@ highlight link MplotComment Comment
 highlight link MplotConstant Constant
 highlight link MplotColors Constant
 highlight link MplotString String
+highlight link MplotColSpec Identifier
 
 let b:current_syntax="mplot"
