@@ -5,8 +5,8 @@ elseif exists("b:current_syntax")
 endif
 
 syntax keyword MplotKeyword s sep skip t xl yl y w h f font fo dpi ct t xl x xf xr yr l lw tf g time comma csv out output line lines xlabel ylabel cmd ws circle upperleft upperright ul ur filledcircle fcircle fillcircle top right filter xexp yexp START Start start END End end
-syntax keyword MplotKeyword rgb plus xrange yrange legendrows legendcols title charttitle
-syntax keyword MplotConstant tab o + - , isodate grid g
+syntax keyword MplotKeyword rgb plus xrange yrange legendrows legendcols title charttitle ignore
+syntax keyword MplotConstant tab o + - , isodate grid g and or
 syntax keyword MplotColors red blue green ccblue ccgray ccmaroon ccgreen ccyellow
 syntax keyword MplotCycle cycle
 
@@ -24,7 +24,7 @@ syntax region MplotString start=/"/ end=/"/ skip=/\\"/
 highlight default link MplotKeyword Keyword
 highlight default link MplotCycle Keyword
 highlight default link MplotComment Comment
-highlight default link MplotConstant Constant
+highlight default link MplotConstant Identifier
 highlight default link MplotColors Constant
 highlight default link MplotString String
 highlight default link MplotColSpec Identifier
