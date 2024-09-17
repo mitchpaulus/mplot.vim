@@ -13,6 +13,7 @@ syntax keyword MplotCycle cycle
 syntax match MplotColSpec /\$[0-9]\+/
 
 syntax region MplotComment start="{-" end="-}"
+syntax region MplotLineComment start="//" end="$"
 syntax region MplotString start=/"/ end=/"/ skip=/\\"/
 
 
@@ -24,6 +25,7 @@ syntax region MplotString start=/"/ end=/"/ skip=/\\"/
 highlight default link MplotKeyword Keyword
 highlight default link MplotCycle Keyword
 highlight default link MplotComment Comment
+highlight default link MplotLineComment Comment
 highlight default link MplotConstant Identifier
 highlight default link MplotColors Constant
 highlight default link MplotString String
